@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Flight.Optimizer.System": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
