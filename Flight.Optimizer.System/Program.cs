@@ -1,8 +1,5 @@
-﻿using Flight.Optimizer.API.Model;
+﻿using Flight.Optimizer.API.Entities;
 using Flight.Optimizer.System.Data;
-using System.Net.Http.Headers;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace Flight.Optimizer.System;
 
@@ -18,11 +15,12 @@ public class Program
 
         airplaneOptimizer.GeneratePassengerList(passengers);
 
-        decimal price = airplaneOptimizer.GetOptimalSeatingArrangement();
+        int airplanCapacity = 200;
+        decimal price = airplaneOptimizer.GetOptimalSeatingArrangement(airplanCapacity);
 
         Console.WriteLine(price);
 
-        Console.WriteLine("Process End...");
+        Console.WriteLine("Process Ended...");
         Console.ReadLine();
     }
 }

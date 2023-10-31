@@ -1,4 +1,4 @@
-﻿namespace Flight.Optimizer.API.Model;
+﻿namespace Flight.Optimizer.System.Domain.Entity;
 
 public class Passenger
 {

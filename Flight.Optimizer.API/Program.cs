@@ -1,7 +1,5 @@
-
 using Flight.Optimizer.API.Data;
 using Flight.Optimizer.API.Repository;
-using Flight.Optimizer.API.Repository.Abstraction;
 using Microsoft.EntityFrameworkCore;
 
 namespace Flight.Optimizer.API;

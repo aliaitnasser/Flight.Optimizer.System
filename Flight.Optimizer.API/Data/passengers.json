@@ -1,434 +1,372 @@
 [
   {
     "Id": 1,
-    "IsAdult": true,
     "Age": 35,
     "FamilyId": "A",
     "NeedsTwoSeats": false
   },
   {
     "Id": 2,
-    "IsAdult": true,
     "Age": 32,
     "FamilyId": "A",
     "NeedsTwoSeats": false
   },
   {
     "Id": 3,
-    "IsAdult": false,
     "Age": 7,
     "FamilyId": "A",
     "NeedsTwoSeats": false
   },
   {
     "Id": 4,
-    "IsAdult": false,
     "Age": 4,
     "FamilyId": "A",
     "NeedsTwoSeats": false
   },
   {
     "Id": 5,
-    "IsAdult": true,
     "Age": 45,
     "FamilyId": "B",
     "NeedsTwoSeats": false
   },
   {
     "Id": 6,
-    "IsAdult": false,
     "Age": 10,
     "FamilyId": "B",
     "NeedsTwoSeats": false
   },
   {
     "Id": 7,
-    "IsAdult": false,
     "Age": 5,
     "FamilyId": "B",
     "NeedsTwoSeats": false
   },
   {
     "Id": 8,
-    "IsAdult": true,
     "Age": 28,
     "FamilyId": "C",
     "NeedsTwoSeats": true
   },
   {
     "Id": 9,
-    "IsAdult": true,
     "Age": 27,
     "FamilyId": "C",
     "NeedsTwoSeats": false
   },
   {
     "Id": 10,
-    "IsAdult": false,
     "Age": 2,
     "FamilyId": "C",
     "NeedsTwoSeats": false
   },
   {
     "Id": 11,
-    "IsAdult": true,
     "Age": 40,
     "FamilyId": "D",
     "NeedsTwoSeats": false
   },
   {
     "Id": 12,
-    "IsAdult": false,
     "Age": 11,
     "FamilyId": "D",
     "NeedsTwoSeats": false
   },
   {
     "Id": 13,
-    "IsAdult": true,
     "Age": 55,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 14,
-    "IsAdult": true,
     "Age": 29,
     "FamilyId": "-",
     "NeedsTwoSeats": true
   },
   {
     "Id": 15,
-    "IsAdult": true,
     "Age": 22,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 16,
-    "IsAdult": true,
     "Age": 33,
     "FamilyId": "H",
     "NeedsTwoSeats": false
   },
   {
     "Id": 17,
-    "IsAdult": true,
     "Age": 31,
     "FamilyId": "H",
     "NeedsTwoSeats": false
   },
   {
     "Id": 18,
-    "IsAdult": false,
     "Age": 9,
     "FamilyId": "H",
     "NeedsTwoSeats": false
   },
   {
     "Id": 19,
-    "IsAdult": false,
     "Age": 8,
     "FamilyId": "H",
     "NeedsTwoSeats": false
   },
   {
     "Id": 20,
-    "IsAdult": false,
     "Age": 6,
     "FamilyId": "H",
     "NeedsTwoSeats": false
   },
   {
     "Id": 21,
-    "IsAdult": true,
     "Age": 50,
     "FamilyId": "I",
     "NeedsTwoSeats": false
   },
   {
     "Id": 22,
-    "IsAdult": false,
     "Age": 12,
     "FamilyId": "I",
     "NeedsTwoSeats": false
   },
   {
     "Id": 23,
-    "IsAdult": true,
     "Age": 38,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 24,
-    "IsAdult": true,
     "Age": 41,
     "FamilyId": "J",
     "NeedsTwoSeats": false
   },
   {
     "Id": 25,
-    "IsAdult": false,
     "Age": 3,
     "FamilyId": "J",
     "NeedsTwoSeats": false
   },
   {
     "Id": 26,
-    "IsAdult": false,
     "Age": 10,
     "FamilyId": "J",
     "NeedsTwoSeats": false
   },
   {
     "Id": 27,
-    "IsAdult": true,
     "Age": 48,
     "FamilyId": "K",
     "NeedsTwoSeats": false
   },
   {
     "Id": 28,
-    "IsAdult": false,
     "Age": 7,
     "FamilyId": "K",
     "NeedsTwoSeats": false
   },
   {
     "Id": 29,
-    "IsAdult": false,
     "Age": 11,
     "FamilyId": "K",
     "NeedsTwoSeats": false
   },
   {
     "Id": 30,
-    "IsAdult": true,
     "Age": 27,
     "FamilyId": "L",
     "NeedsTwoSeats": false
   },
   {
     "Id": 31,
-    "IsAdult": true,
     "Age": 25,
     "FamilyId": "L",
     "NeedsTwoSeats": false
   },
   {
     "Id": 32,
-    "IsAdult": false,
     "Age": 4,
     "FamilyId": "L",
     "NeedsTwoSeats": false
   },
   {
     "Id": 33,
-    "IsAdult": true,
     "Age": 47,
     "FamilyId": "M",
     "NeedsTwoSeats": false
   },
   {
     "Id": 34,
-    "IsAdult": true,
     "Age": 42,
     "FamilyId": "M",
     "NeedsTwoSeats": false
   },
   {
     "Id": 35,
-    "IsAdult": false,
     "Age": 6,
     "FamilyId": "M",
     "NeedsTwoSeats": false
   },
   {
     "Id": 36,
-    "IsAdult": false,
     "Age": 8,
     "FamilyId": "M",
     "NeedsTwoSeats": false
   },
   {
     "Id": 37,
-    "IsAdult": true,
     "Age": 36,
     "FamilyId": "N",
     "NeedsTwoSeats": false
   },
   {
     "Id": 38,
-    "IsAdult": true,
     "Age": 34,
     "FamilyId": "N",
     "NeedsTwoSeats": false
   },
   {
     "Id": 39,
-    "IsAdult": false,
     "Age": 9,
     "FamilyId": "N",
     "NeedsTwoSeats": false
   },
   {
     "Id": 40,
-    "IsAdult": false,
     "Age": 12,
     "FamilyId": "N",
     "NeedsTwoSeats": false
   },
   {
     "Id": 41,
-    "IsAdult": true,
     "Age": 53,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 42,
-    "IsAdult": true,
     "Age": 26,
     "FamilyId": "-",
     "NeedsTwoSeats": true
   },
   {
     "Id": 43,
-    "IsAdult": true,
     "Age": 31,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 44,
-    "IsAdult": true,
     "Age": 28,
     "FamilyId": "O",
     "NeedsTwoSeats": false
   },
   {
     "Id": 45,
-    "IsAdult": true,
     "Age": 30,
     "FamilyId": "O",
     "NeedsTwoSeats": false
   },
   {
     "Id": 46,
-    "IsAdult": false,
     "Age": 7,
     "FamilyId": "O",
     "NeedsTwoSeats": false
   },
   {
     "Id": 47,
-    "IsAdult": false,
     "Age": 5,
     "FamilyId": "O",
     "NeedsTwoSeats": false
   },
   {
     "Id": 48,
-    "IsAdult": true,
     "Age": 37,
     "FamilyId": "P",
     "NeedsTwoSeats": false
   },
   {
     "Id": 49,
-    "IsAdult": true,
     "Age": 33,
     "FamilyId": "P",
     "NeedsTwoSeats": false
   },
   {
     "Id": 50,
-    "IsAdult": false,
     "Age": 3,
     "FamilyId": "P",
     "NeedsTwoSeats": false
   },
   {
     "Id": 51,
-    "IsAdult": false,
     "Age": 11,
     "FamilyId": "P",
     "NeedsTwoSeats": false
   },
   {
     "Id": 52,
-    "IsAdult": true,
     "Age": 39,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 53,
-    "IsAdult": true,
     "Age": 46,
     "FamilyId": "Q",
     "NeedsTwoSeats": false
   },
   {
     "Id": 54,
-    "IsAdult": false,
     "Age": 10,
     "FamilyId": "Q",
     "NeedsTwoSeats": false
   },
   {
     "Id": 55,
-    "IsAdult": false,
     "Age": 12,
     "FamilyId": "Q",
     "NeedsTwoSeats": false
   },
   {
     "Id": 56,
-    "IsAdult": true,
     "Age": 24,
     "FamilyId": "R",
     "NeedsTwoSeats": false
   },
   {
     "Id": 57,
-    "IsAdult": true,
     "Age": 21,
     "FamilyId": "R",
     "NeedsTwoSeats": false
   },
   {
     "Id": 58,
-    "IsAdult": false,
     "Age": 2,
     "FamilyId": "R",
     "NeedsTwoSeats": false
   },
   {
     "Id": 59,
-    "IsAdult": false,
     "Age": 4,
     "FamilyId": "R",
     "NeedsTwoSeats": false
   },
   {
     "Id": 60,
-    "IsAdult": false,
     "Age": 6,
     "FamilyId": "R",
     "NeedsTwoSeats": false
   },
   {
     "Id": 61,
-    "IsAdult": false,
     "Age": 6,
     "FamilyId": "-",
     "NeedsTwoSeats": false
   },
   {
     "Id": 62,
-    "IsAdult": false,
     "Age": 15,
     "FamilyId": "-",
     "NeedsTwoSeats": false

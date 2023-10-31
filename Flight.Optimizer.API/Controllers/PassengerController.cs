@@ -1,5 +1,5 @@
-﻿using Flight.Optimizer.API.Model;
-using Flight.Optimizer.API.Repository.Abstraction;
+﻿using Flight.Optimizer.API.Entities;
+using Flight.Optimizer.API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flight.Optimizer.API.Controllers

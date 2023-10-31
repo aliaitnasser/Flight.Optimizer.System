@@ -1,13 +1,16 @@
-﻿using Flight.Optimizer.API.Model;
+﻿using Flight.Optimizer.API.Entities;
 
 namespace Flight.Optimizer.System;
 
 public class AirplaneOptimizer
 {
-    private const int AirplaneCapacity = 200;
     public static List<Family> Families { get; set; } = new List<Family>();
     public static List<Passenger> SinglePassengers { get; set; } = new List<Passenger>();
 
+    /// <summary>
+    /// Generating the passenger list
+    /// </summary>
+    /// <param name="passengers">passenger list</param>
     public void GeneratePassengerList(List<Passenger> passengers)
     {
         var familyDictionary = new Dictionary<string, Family>();
@@ -18,7 +21,6 @@ public class AirplaneOptimizer
             {
                 Id = item.Id,
                 Age = item.Age,
-                IsAdult = item.IsAdult,
                 NeedsTwoSeats = item.NeedsTwoSeats,
                 FamilyId = item.FamilyId
             };
@@ -40,9 +42,13 @@ public class AirplaneOptimizer
         }
     }
 
-    public decimal GetOptimalSeatingArrangement()
+    /// <summary>
+    /// Calculating the optimal seating arrangement 
+    /// </summary>
+    /// <param name="airplanCapacity">the price</param>
+    /// <returns></returns>
+    public decimal GetOptimalSeatingArrangement(int airplanCapacity)
     {
-        int seatsRemaining = AirplaneCapacity;
         decimal totalRevenue = 0m;
 
         // Prioritize individual passengers that require two seats
@@ -50,10 +56,10 @@ public class AirplaneOptimizer
 
         foreach(var passenger in twoSeatPassengers)
         {
-            if(seatsRemaining < 2) break;  // Exit loop if no more seats for two-seat passengers
+            if(airplanCapacity < 2) break;  // Exit loop if no more seats for two-seat passengers
 
             totalRevenue += passenger.GetTicketPrice();
-            seatsRemaining -= 2;
+            airplanCapacity -= 2;
             Console.WriteLine($"Passenger with Two seates added.");
         }
 
@@ -63,32 +69,32 @@ public class AirplaneOptimizer
         foreach(var family in sortedFamilies)
         {
             int familySize = family.Members.Count + family.Members.Count(p => p.NeedsTwoSeats);
-            if(seatsRemaining < familySize) continue;  // Skip to next family if not enough seats
+            if(airplanCapacity < familySize) continue;  // Skip to next family if not enough seats
 
             totalRevenue += family.GetTotalPrice();
-            seatsRemaining -= familySize;
+            airplanCapacity -= familySize;
             Console.WriteLine($"Family {family.FamilyID} with {familySize} seates added.");
 
-            if(seatsRemaining == 0) break;  // Exit loop if airplane is full
+            if(airplanCapacity == 0) break;  // Exit loop if airplane is full
         }
 
         // Finally, handle individual passengers that require only one seat
-        var singleSeatPassengers = SinglePassengers.Where(p => !p.NeedsTwoSeats);
+        var singleSeatPassengers = SinglePassengers.Where(p => !p.NeedsTwoSeats).OrderByDescending(p => p.Age);
 
         foreach(var passenger in singleSeatPassengers)
         {
-            if(!passenger.IsAdult && passenger.Age < 12)
+            if(passenger.Age < 12)
             {
                 Console.WriteLine($"This passenger with age {passenger.Age} can not travel alone, required age 12 or more.");
                 continue; //skip single passenger with age less than 12.
             }
-            if(seatsRemaining == 0) break;  // Exit loop if airplane is full
+            if(airplanCapacity == 0) break;  // Exit loop if airplane is full
 
             totalRevenue += passenger.GetTicketPrice();
-            seatsRemaining -= 1;
-            string type = passenger.IsAdult ? "Adult" : "Child";
+            airplanCapacity -= 1;
+            string type = passenger.Age >= 18 ? "Adult" : "Child";
 
-            Console.WriteLine($"Passenger with One seat added. {type}");
+            Console.WriteLine($"Passenger with One seat added. {type},Age - {passenger.Age}");
         }
 
         return totalRevenue;

@@ -1,4 +1,4 @@
-﻿namespace Flight.Optimizer.API.Model;
+﻿namespace Flight.Optimizer.API.Entities;
 
 public class Family
 {
@@ -9,16 +9,16 @@ public class Family
 
     public void AddMember(Passenger passenger)
     {
-        if(Members.Count > 5) throw new Exception("Family can not have more than 5 members");
+        if(Members.Count > 4) throw new Exception("Family can not have more than 5 members");
 
-        if(passenger.IsAdult)
+        if(passenger.Age > 18)
         {
-            if(_adultsCount > 2) throw new Exception("Family can not have more than 2 adults");
+            if(_adultsCount > 1) throw new Exception("Family can not have more than 2 adults");
             _adultsCount++;
         }
         else
         {
-            if(_childrenCount > 3) throw new Exception("Family can not have more than 3 children");
+            if(_childrenCount > 2) throw new Exception("Family can not have more than 3 children");
             _childrenCount++;
         }
 

@@ -1,22 +1,20 @@
 ﻿using Flight.Optimizer.API.Data;
-using Flight.Optimizer.API.Model;
-using Flight.Optimizer.API.Repository.Abstraction;
+using Flight.Optimizer.API.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Flight.Optimizer.API.Repository
+namespace Flight.Optimizer.API.Repository;
+
+public class PassengerRepository: IPassengerRepository
 {
-    public class PassengerRepository: IPassengerRepository
+    private readonly DataContext _context;
+
+    public PassengerRepository(DataContext context)
     {
-        private readonly DataContext _context;
+        _context = context;
+    }
 
-        public PassengerRepository(DataContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<List<Passenger>> GetAllPassengersAsync()
-        {
-            return await _context.Passengers.ToListAsync();
-        }
+    public async Task<List<Passenger>> GetAllPassengersAsync()
+    {
+        return await _context.Passengers.ToListAsync();
     }
 }

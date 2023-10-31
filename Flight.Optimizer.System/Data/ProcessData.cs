@@ -1,4 +1,4 @@
-﻿using Flight.Optimizer.API.Model;
+﻿using Flight.Optimizer.API.Entities;
 using System.Net.Http.Headers;
 using System.Text.Json;
 

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Optimizer.System", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Optimizer.Tests", "Flight.Optimizer.Tests\Flight.Optimizer.Tests.csproj", "{778B1D35-E7BC-49ED-9908-C5909F1E2FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Optimizer.API", "Flight.Optimizer.API\Flight.Optimizer.API.csproj", "{507C875E-A432-4D9F-B00D-9221E0B6F326}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Optimizer.API", "Flight.Optimizer.API\Flight.Optimizer.API.csproj", "{507C875E-A432-4D9F-B00D-9221E0B6F326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

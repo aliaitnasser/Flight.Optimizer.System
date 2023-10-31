@@ -1,4 +1,4 @@
-﻿using Flight.Optimizer.API.Model;
+﻿using Flight.Optimizer.API.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
@@ -10,7 +10,7 @@ public class SeedData
     {
         if(await context.Passengers.AnyAsync()) return;
 
-        var passengersData = await File.ReadAllTextAsync("Data/Data.json");
+        var passengersData = await File.ReadAllTextAsync("Data/passengers.json");
 
         var option = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
 
@@ -20,7 +20,6 @@ public class SeedData
         {
             context.Passengers.Add(passenger);
         }
-
         await context.SaveChangesAsync();
     }
 }

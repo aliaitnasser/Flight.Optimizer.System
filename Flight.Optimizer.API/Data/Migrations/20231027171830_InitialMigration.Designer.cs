@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Flight.Optimizer.API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231026160738_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20231027171830_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,7 +19,7 @@ namespace Flight.Optimizer.API.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.13");
 
-            modelBuilder.Entity("Flight.Optimizer.API.Model.Passenger", b =>
+            modelBuilder.Entity("Flight.Optimizer.System.Domain.Entity.Passenger", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
